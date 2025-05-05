@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Lista de Tarefas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>📝 Lista de Tarefas</h1>
+
+    <div class="input-area">
+      <input id="campoTarefa" type="text" placeholder="Digite uma tarefa..." onkeydown="if(event.key === 'Enter') adicionar()">
+      <button onclick="adicionar()">+</button>
+    </div>
+
+    <ul id="listaTarefas"></ul>
+    <p id="mensagemVazia">Nenhuma tarefa por enquanto!</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
